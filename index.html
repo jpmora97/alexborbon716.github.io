@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script type="text/javascript">
+
+        /* Put visitor details programmatically. */ 
+            window.acquire=window.acquire||[];
+            acquire.push({
+                userDetails:{
+                   name:'<?php echo $user->name ?>', //FULL_NAME
+                   email:'<?php echo $user->email ?>', //EMAIL
+                   phone:'<?php echo $user->phone_number ?>', //PHONE_NUMBER
+            });
+        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -27,20 +38,6 @@
             })())</script>
  <noscript><a href="https://www.acquire.io?welcome" title="live chat software">Acquire</a></noscript>
 
-<script type="text/javascript">
-
-        /* Put visitor details programmatically. */ 
-            window.acquire=window.acquire||[];
-            acquire.push({
-                userDetails:{
-                   name:'<?php echo $user->name ?>', //FULL_NAME
-                   email:'<?php echo $user->email ?>', //EMAIL
-                   phone:'<?php echo $user->phone_number ?>', //PHONE_NUMBER
-                   remarks:'<?php echo $user->remarks ?>', //REMARKS
-                              },
-              lang:'<?php echo $language_code ?>' //LANGUAGE CODE
-            });
-</script>
 
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
